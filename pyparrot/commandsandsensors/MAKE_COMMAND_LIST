@@ -1,0 +1,2 @@
+cat *xml | grep '<cmd' | sed 's/^.*name="//' | sed 's/".*$//' | sort -f > COMMANDS
+
